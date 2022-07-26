@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View, ImageBackground, Dimensions } from "react-native";
+import StyledButton from "../StyledButton/StyledButton";
 
 import styles from "./styles";
 
@@ -16,6 +17,19 @@ const CarItem = (props) => {
         <Text style={styles.title}>Model X</Text>
         <Text style={styles.subtitle}>Starting at $69,420</Text>
       </View>
+
+      <StyledButton
+        type="primary"
+        onPress={() => {
+          console.warn("primary");
+        }}
+      />
+      <StyledButton
+        type="secondary"
+        onPress={() => {
+          console.warn("secondary");
+        }}
+      />
     </View>
   );
 };

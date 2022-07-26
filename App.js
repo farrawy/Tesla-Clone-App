@@ -9,8 +9,6 @@ import {
 } from "react-native";
 import CarItem from "./components/CarItem/CarItem";
 
-LogBox.ignoreAllLogs();
-
 export default function App() {
   return (
     <View style={styles.container}>
