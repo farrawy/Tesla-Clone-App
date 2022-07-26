@@ -7,18 +7,16 @@ import {
   ImageBackground,
   Dimensions,
 } from "react-native";
-import CarItem from "./components/CarItem/CarItem";
-const data = require("./assets/cars");
+import CarsList from "./components/CarsList/CarsList";
+import Header from "./components/Header/Header";
+
+const data = require("./components/CarsList/cars");
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        name={"Model X"}
-        tagline={"Order Online for"}
-        taglineCTA={"Touchless Delivery"}
-        image={require("./assets/images/ModelX.jpeg")}
-      />
+      <Header />
+      <CarsList />
       <StatusBar style="auto" />
     </View>
   );
