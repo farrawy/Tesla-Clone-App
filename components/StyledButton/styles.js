@@ -4,7 +4,6 @@ const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
-    width: width,
     padding: 10,
   },
   button: {
